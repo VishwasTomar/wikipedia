@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+   <body>
+      <table border = 1>
+         <h1>TOP 10 FREQUENT WORDS </h1>
+         <tr>
+            <th>words</th>
+            <th>counts</th>
+         </tr>
+
+         {% for key, value in p.items() %}
+            <tr>
+               <td> {{ key }} </td>
+               <td> {{ value }} </td>
+            </tr>
+            
+         {% endfor %}
+         
+      </table>
+   </body>
+</html>
